@@ -10,6 +10,11 @@ public class RecursiveCountDown {
      */
     public String countDown(int target) {
         //PARTICIPANTS: replace this placeholder line with your implementation
-        return Integer.toString(-1);
+        String result = "";
+        while (target >= 0) {
+            result = result + target;
+            target--;
+        }
+        return result;
     }
 }
