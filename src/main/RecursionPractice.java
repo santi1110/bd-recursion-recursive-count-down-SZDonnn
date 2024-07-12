@@ -1,15 +1,16 @@
-package com.amazon.ata.recursion.prework;
+package main;
 
 public class RecursionPractice {
 
     /**
      * Test main to output the results of our CountDown recursion method.
+     *
      * @param args not used
      */
     public static void main(String[] args) {
-        int target = 3;
         RecursiveCountDown recursiveCountDown = new RecursiveCountDown();
-        System.out.println(recursiveCountDown.countDown(target));
-        //Example: The output for a target of 3 should be "3210"
+        int target = 3;
+        String result = recursiveCountDown.countDown(target);
+        System.out.println(result);
     }
 }
